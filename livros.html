@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formando Leitores</title>
+    <link rel="stylesheet" href="livros.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <h1><i class="fa-brands fa-readme"></i> Formando Leitores</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="livros.html" class="active">Livros</a></li>
+                    <li><a href="frases.html">Citações</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+
+    <main>
+        <!-- Barra de pesquisa -->
+        <div class="search-bar">
+            <input type="text" id="search-input" placeholder="Pesquisar Livros...">
+            <button id="search-btn">🔍</button>
+        </div>
+
+        <!-- Sessões do catálogo -->
+        <section id="catalog">
+            <!-- Recomendações Personalizadas -->
+            <div class="book-section">
+                <h2>Recomendações Personalizadas</h2>
+                <div class="slider-container">
+                    <button class="slider-btn prev">◀</button>
+                    <div class="book-slider" id="recommended-books"></div>
+                    <button class="slider-btn next">▶</button>
+                </div>
+            </div>
+
+            <!-- Mais Vendidos -->
+            <div class="book-section">
+                <h2>Mais Vendidos</h2>
+                <div class="slider-container">
+                    <button class="slider-btn prev">◀</button>
+                    <div class="book-slider" id="best-sellers"></div>
+                    <button class="slider-btn next">▶</button>
+                </div>
+            </div>
+
+
+            <!-- História -->
+            <div class="book-section">
+                <h2>História</h2>
+                <div class="slider-container">
+                    <button class="slider-btn prev">◀</button>
+                    <div class="book-slider" id="history-books"></div>
+                    <button class="slider-btn next">▶</button>
+                </div>
+            </div>
+
+            <!-- Infantil -->
+            <div class="book-section">
+                <h2>Infantil</h2>
+                <div class="slider-container">
+                    <button class="slider-btn prev">◀</button>
+                    <div class="book-slider" id="kids-books"></div>
+                    <button class="slider-btn next">▶</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Formando Leitores</p>
+    </footer>
+
+    <script src="livros.js"></script>
+</body>
+
+</html>
