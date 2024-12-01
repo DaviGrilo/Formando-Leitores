@@ -447,4 +447,17 @@ h1, h2, p {
 }
 }
 
+.logo {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 1010;
+}
 
+.logo img {
+    width: 80px;
+    height: 65px;
+    border-radius: 50%;
+    border: 2px solid #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
