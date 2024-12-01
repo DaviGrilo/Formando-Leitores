@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contato - Biblioteca Virtual</title>
   <link rel="stylesheet" href="contato.css">
-  <link rel="website icon" type="png" href="./img/logo.png">
 </head>
 <body>
   <header class="header">
@@ -22,7 +21,8 @@
   </header>
 
   <main class="contact-container">
-    <form class="contact-form">
+    <form class="contact-form" action="https://formsubmit.co/ddavisgdev@gmail.com" method="POST">
+
       <label for="name">Seu Nome:</label>
       <input type="text" id="name" name="name" placeholder="Digite seu nome..." required>
 
@@ -33,11 +33,16 @@
       <textarea id="message" name="message" placeholder="Digite sua mensagem aqui..." rows="5" required></textarea>
 
       <button type="submit" class="submit-button">Enviar Mensagem</button>
+    
+      <input type="text" name="_honey" style="display: none">
     </form>
+    
   </main>
 
   <footer>
     <p>&copy; 2024 Formando Leitores. Todos os direitos reservados.</p>
   </footer>
+
+  <script src="forms.js"></script>
 </body>
 </html>
